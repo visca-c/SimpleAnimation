@@ -125,7 +125,7 @@ public partial class SimpleAnimation: MonoBehaviour
     {
         m_Animator.enabled = true;
         Kick();
-        if (m_Clip != null && m_PlayAutomatically)
+        if (m_Clip != null)
         {
             m_Playable.Play(kDefaultStateName);
         }
