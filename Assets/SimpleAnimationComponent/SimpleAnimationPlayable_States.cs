@@ -563,7 +563,7 @@ public partial class SimpleAnimationPlayable : PlayableBehaviour
         public void RemoveState(int index)
         {
             StateInfo removed = m_States[index];
-            m_States[index] = null;
+            m_States.Remove(removed);
             removed.DestroyPlayable();
             m_Count = m_States.Count;
         }
